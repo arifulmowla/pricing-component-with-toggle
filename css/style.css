@@ -101,13 +101,13 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-top: 80px;
 }
 
 .card {
   background-color: white;
   border-radius: 12px;
   padding: 40px 30px;
-  margin: 90px 0;
   -webkit-box-shadow: 3px 3px 8px #b3b5c6;
           box-shadow: 3px 3px 8px #b3b5c6;
   width: 33%;
@@ -226,6 +226,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 60px;
   }
   .card {
     width: 100%;

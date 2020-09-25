@@ -99,14 +99,13 @@ body {
 .card-flex {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 80px;
 }
 
 .card {
   background-color: white;
   border-radius: 12px;
   padding: 40px 30px;
-
-  margin: 90px 0;
 
   box-shadow: 3px 3px 8px $LightGrayishBlue;
 
@@ -214,6 +213,7 @@ body {
 
   .card-flex {
     flex-direction: column;
+    padding-top: 60px;
   }
 
   .card {
