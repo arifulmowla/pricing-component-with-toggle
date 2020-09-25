@@ -100,8 +100,9 @@ body {
   background-color: white;
   border-radius: 12px;
   padding: 40px 30px;
-  margin-top: 60px;
-  margin: 60px 0;
+
+  margin: 90px 0;
+
   box-shadow: 3px 3px 8px $LightGrayishBlue;
 
   width: 33%;
@@ -114,7 +115,7 @@ body {
   .price {
     font-weight: bold;
     color: $DarkGrayishBlue;
-    font-size: 36px;
+    font-size: 56px;
     padding: 10px 0;
     .dollar {
       font-size: 20px;
