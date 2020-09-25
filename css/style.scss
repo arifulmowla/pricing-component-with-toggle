@@ -24,7 +24,7 @@ label {
   text-indent: -9999px;
   width: 50px;
   height: 30px;
-  background: $LightGrayishBlue;
+  background: $LinearGradient;
   display: block;
   border-radius: 100px;
   position: relative;
@@ -43,7 +43,7 @@ label:after {
 }
 
 input:checked + label {
-  background: $LinearGradient;
+  background: linear-gradient(to right, hsl(234, 24%, 77%), hsl(238, 78%, 82%));
 }
 
 input:checked + label:after {

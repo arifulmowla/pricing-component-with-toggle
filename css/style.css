@@ -10,7 +10,8 @@ label {
   text-indent: -9999px;
   width: 50px;
   height: 30px;
-  background: #b3b5c6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
   display: block;
   border-radius: 100px;
   position: relative;
@@ -30,8 +31,8 @@ label:after {
 }
 
 input:checked + label {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
-  background: linear-gradient(#a3a8f0, #696fdd);
+  background: -webkit-gradient(linear, left top, right top, from(#b6b9d2), to(#adb0f5));
+  background: linear-gradient(to right, #b6b9d2, #adb0f5);
 }
 
 input:checked + label:after {
