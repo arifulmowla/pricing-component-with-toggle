@@ -10,11 +10,17 @@ label {
   text-indent: -9999px;
   width: 50px;
   height: 30px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
-  background: linear-gradient(#a3a8f0, #696fdd);
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
   display: block;
   border-radius: 100px;
   position: relative;
+}
+
+label:hover,
+input:checked + label:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#c3c5e9), to(#bbbdf7));
+  background: linear-gradient(to right, #c3c5e9, #bbbdf7);
 }
 
 label:after {
@@ -31,8 +37,8 @@ label:after {
 }
 
 input:checked + label {
-  background: -webkit-gradient(linear, left top, right top, from(#b6b9d2), to(#adb0f5));
-  background: linear-gradient(to right, #b6b9d2, #adb0f5);
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
 }
 
 input:checked + label:after {
