@@ -159,6 +159,7 @@ body {
   letter-spacing: 1px;
   -webkit-box-shadow: 2px 3px 6px #b3b5c6;
           box-shadow: 2px 3px 6px #b3b5c6;
+  cursor: pointer;
 }
 
 .card .btn-leanmore:hover {
