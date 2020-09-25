@@ -1,0 +1,223 @@
+//Colors
+
+//Primary
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+$LinearGradient: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+//Neutral
+
+$VeryLightGrayishBlue: hsl(240, 78%, 98%);
+$LightGrayishBlue: hsl(234, 14%, 74%);
+$GrayishBlue: hsl(233, 13%, 49%);
+$DarkGrayishBlue: hsl(232, 13%, 33%);
+$black: rgba(black, 0.8);
+
+//toggle
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 30px;
+  background: $LightGrayishBlue;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: $LinearGradient;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 25px;
+}
+
+// new scss
+body {
+  background-image: url(/images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: $VeryLightGrayishBlue;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.head h1 {
+  color: $DarkGrayishBlue;
+  padding: 30px 0;
+  margin-top: 30px;
+}
+.toggle-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-label {
+  margin: 0 20px;
+  color: $GrayishBlue;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin-top: 60px;
+  margin: 60px 0;
+  box-shadow: 3px 3px 8px $LightGrayishBlue;
+
+  width: 33%;
+  .card-title {
+    color: $GrayishBlue;
+    font-weight: bold;
+    padding: 5px 0;
+  }
+
+  .price {
+    font-weight: bold;
+    color: $DarkGrayishBlue;
+    font-size: 36px;
+    padding: 10px 0;
+    .dollar {
+      font-size: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .card-info {
+    list-style-type: none;
+    margin: 0;
+    padding: 30px 0;
+    li {
+      list-style: none;
+      padding: 10px 0;
+      border-top: 1px solid $VeryLightGrayishBlue;
+    }
+
+    li:nth-last-child(1) {
+      border-bottom: 1px solid $VeryLightGrayishBlue;
+    }
+  }
+
+  .btn-leanmore {
+    background: linear-gradient(
+      to right,
+      hsl(236, 72%, 79%),
+      hsl(237, 63%, 64%)
+    );
+    padding: 15px 0;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 2px 3px 6px $LightGrayishBlue;
+  }
+
+  .btn-leanmore:hover {
+    border: 1px solid hsl(237, 63%, 64%);
+    background: white;
+    color: $DarkGrayishBlue;
+  }
+}
+
+.middle-card {
+  background: $LinearGradient;
+
+  transform: scaleY(1.15);
+
+  color: white;
+  .card-title {
+    color: white;
+  }
+
+  .price {
+    color: white;
+  }
+  .btn-leanmore {
+    background: $VeryLightGrayishBlue;
+    color: $DarkGrayishBlue;
+  }
+  .btn-leanmore:hover {
+    border: 1px solid white;
+    background: hsl(237, 63%, 64%);
+    color: white;
+  }
+}
+
+.bottom-left-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 250px;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 600px) {
+  .middle-card {
+    transform: scaleY(1);
+  }
+
+  .card-flex {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    padding: 30px 0px;
+    margin: 30px 0;
+  }
+
+  .card-content {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card:nth-child(1) {
+    margin-right: -10px;
+  }
+  .card:nth-child(3) {
+    margin-left: -10px;
+  }
+}
