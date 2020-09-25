@@ -136,11 +136,11 @@ body {
     li {
       list-style: none;
       padding: 10px 0;
-      border-top: 1px solid $VeryLightGrayishBlue;
+      border-top: 1px solid rgba($color: $LightGrayishBlue, $alpha: 0.4);
     }
 
     li:nth-last-child(1) {
-      border-bottom: 1px solid $VeryLightGrayishBlue;
+      border-bottom: 1px solid rgba($color: $LightGrayishBlue, $alpha: 0.4);
     }
   }
 
@@ -189,6 +189,13 @@ body {
     border: 1px solid white;
     background: hsl(237, 63%, 64%);
     color: white;
+  }
+
+  li {
+    border-top: 1px solid $LightGrayishBlue !important;
+  }
+  li:nth-last-child(1) {
+    border-bottom: 1px solid $LightGrayishBlue !important;
   }
 }
 

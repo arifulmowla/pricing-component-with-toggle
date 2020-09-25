@@ -145,11 +145,11 @@ body {
 .card .card-info li {
   list-style: none;
   padding: 10px 0;
-  border-top: 1px solid #f6f6fe;
+  border-top: 1px solid rgba(179, 181, 198, 0.4);
 }
 
 .card .card-info li:nth-last-child(1) {
-  border-bottom: 1px solid #f6f6fe;
+  border-bottom: 1px solid rgba(179, 181, 198, 0.4);
 }
 
 .card .btn-leanmore {
@@ -198,6 +198,14 @@ body {
   border: 1px solid white;
   background: #696fdd;
   color: white;
+}
+
+.middle-card li {
+  border-top: 1px solid #b3b5c6 !important;
+}
+
+.middle-card li:nth-last-child(1) {
+  border-bottom: 1px solid #b3b5c6 !important;
 }
 
 .bottom-left-img {
